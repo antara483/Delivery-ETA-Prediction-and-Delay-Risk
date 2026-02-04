@@ -134,6 +134,14 @@ From the weather plot:
 
 **Interpretation:** Adverse weather (especially fog and storms) leads to higher prediction error, suggesting the model finds it harder to estimate delivery times under poor visibility and unstable conditions.
 
+##  Tech Stack
+
+- Python  
+- Pandas / NumPy  
+- Scikit-learn  
+- Matplotlib / Seaborn   
+- Joblib 
+
 ## 📁 Project Structure
 ```
 Delivery-ETA-Prediction/
@@ -306,7 +314,7 @@ This provides a strong tradeoff between catching delays and limiting unnecessary
 
 ---
 
-## 🔧 Model Improvements
+##  Model Improvements
 
 Based on learning curves and error analysis, the following improvements were applied:
 
@@ -331,7 +339,13 @@ source venv/Scripts/activate  # Windows
 # Install dependencies
 pip install -r requirements.txt
 ```
+## A short note on what I changed
 
+- Based on learning curves and error analysis, several improvements were applied.
+- Temporal features (hour, day of week, weekend flag) and geographic distance were engineered to better capture delivery patterns.
+- Extreme delivery times were capped at the 99th percentile to reduce the impact of outliers.
+- For Random Forest, tree depth and minimum leaf size were tuned to limit overfitting and improve generalization.
+- These adjustments reduced validation error and narrowed the train–validation gap.
 
 ## Bonus: Monitoring Plan
 
@@ -358,17 +372,7 @@ The model would be retrained whenever performance degradation or significant dri
 - End-to-end practical ML pipeline implemented: **EDA → Feature Engineering → Modeling → Evaluation → Deployment-ready artifacts**
 
 ---
-
-##  Tech Stack
-
-- Python  
-- Pandas / NumPy  
-- Scikit-learn  
-- Matplotlib / Seaborn  
-- Flask  
-- Joblib  
-
----
+ 
 
 ## 👤 Author
 
