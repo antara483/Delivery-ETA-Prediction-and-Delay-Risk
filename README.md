@@ -142,7 +142,7 @@ From the weather plot:
 - Matplotlib / Seaborn   
 - Joblib 
 
-## 📁 Project Structure
+##  Project Structure
 ```
 Delivery-ETA-Prediction/
 │
@@ -222,7 +222,7 @@ This ensures the model only uses information available at prediction time.
 
 ---
 
-## 🔀 Data Split Strategy
+##  Data Split Strategy
 
 ### Regression
 
