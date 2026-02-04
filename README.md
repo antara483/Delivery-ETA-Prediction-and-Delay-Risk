@@ -332,12 +332,23 @@ These changes reduced validation error and narrowed the training–validation ga
 ##  Installation & Setup
 
 ```bash
+# Clone the repository
+git clone https://github.com/antara483/Delivery-ETA-Prediction-and-Delay-Risk.git
+
+cd Delivery-ETA-Prediction-and-Delay-Risk
+
 # Create virtual environment
 python -m venv venv
 source venv/Scripts/activate  # Windows
 
 # Install dependencies
 pip install -r requirements.txt
+
+# Run the Notebook
+
+Launch Jupyter Notebook:
+
+jupyter notebook
 ```
 ## A short note on what I changed
 
