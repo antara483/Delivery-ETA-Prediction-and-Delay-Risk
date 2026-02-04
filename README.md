@@ -386,5 +386,7 @@ The model would be retrained whenever performance degradation or significant dri
  
 
 ## 👤 Author
+## Antara Arkasali
+Former AIML Intern
 
-**Antara Arkasali**  
+
